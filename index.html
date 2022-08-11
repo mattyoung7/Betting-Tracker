@@ -1,365 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Betting Tracker</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <section class="section header">
-        <div class="container">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+</head>
+
+<body>
+    <container class="container">
+        <section class="section header">
             <h1 class="title">Betting Tracker</h1>
-        </div>
-        <div class="buttons">
-            <button class="button is-primary">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">4</button>
-        </div>
-    </section>
-    <section class="section flex">
-        <div class="notification is-primary">
-            <h2 class="subtitle banner">Period 1</h2>
-        </div>
-        <table id="table1" class="table is-narrow">
 
-            <thead>
-                <tr>
-                    <th class="has-text-centered">Week</th>
-                    <th class="has-text-centered">David</th>
-                    <th class="has-text-centered">Kenny</th>
-                    <th class="has-text-centered">Matthew</th>
-                </tr>
-            </thead>
+            <div class="buttons">
+                <button class="button is-primary">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button">4</button>
+            </div>
+        </section>
+        <section class="section flex">
+            <div class="notification is-primary">
+                <h2 class="subtitle banner">Period 1</h2>
+            </div>
+            <table id="table1" class="table is-narrow">
 
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>W</td>
-                    <td>W</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>L</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>L</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>W</td>
-                    <td>W</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>L</td>
-                    <td>L</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>L</td>
-                    <td>L</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>L</td>
-                    <td>W</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-            </tbody>
+                <thead>
+                    <tr>
+                        <th class="has-text-centered">Week</th>
+                        <th class="has-text-centered">David</th>
+                        <th class="has-text-centered">Kenny</th>
+                        <th class="has-text-centered">Matt</th>
+                    </tr>
+                </thead>
 
-            <tfoot>
-                <tr>
-                    <th class="has-text-centered">Total</th>
-                    <th class="has-text-centered">5</th>
-                    <th class="has-text-centered">3</th>
-                    <th class="has-text-centered">3</th>
-                </tr>
-            </tfoot>
+                <tbody></tbody>
 
-        </table>
+                <tfoot>
+                    <tr>
+                        <th class="has-text-centered">Total</th>
+                        <th id="davidTotal" class="has-text-centered"></th>
+                        <th id="kennyTotal" class="has-text-centered"></th>
+                        <th id="mattTotal" class="has-text-centered"></th>
+                    </tr>
+                </tfoot>
 
-        <table id="table2" class="table is-narrow hidden">
-            <thead>
-                <tr>
-                    <th class="has-text-centered">Week</th>
-                    <th class="has-text-centered">David</th>
-                    <th class="has-text-centered">Kenny</th>
-                    <th class="has-text-centered">Matthew</th>
-                </tr>
-            </thead>
+            </table>
 
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>L</td>
-                    <td>W</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>W</td>
-                    <td>W</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>W</td>
-                    <td>W</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>L</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>L</td>
-                    <td>L</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>L</td>
-                    <td>W</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-            </tbody>
+            <div class="notification is-primary">
+                <h2 class="subtitle banner">Funds due: 08/10/22</h2>
+            </div>
 
-            <tfoot>
-                <tr>
-                    <th class="has-text-centered">Total</th>
-                    <th class="has-text-centered">6</th>
-                    <th class="has-text-centered">4</th>
-                    <th class="has-text-centered">3</th>
-                </tr>
-            </tfoot>
-
-        </table>
-
-        <table id="table3" class="table is-narrow hidden">
-            <thead>
-                <tr>
-                    <th class="has-text-centered">Week</th>
-                    <th class="has-text-centered">David</th>
-                    <th class="has-text-centered">Kenny</th>
-                    <th class="has-text-centered">Matthew</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>W</td>
-                    <td>W</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>L</td>
-                    <td>W</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>L</td>
-                    <td>W</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>L</td>
-                    <td>L</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>L</td>
-                    <td>W</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>L</td>
-                    <td>L</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>L</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>W</td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <th class="has-text-centered">Total</th>
-                    <th class="has-text-centered">4</th>
-                    <th class="has-text-centered">4</th>
-                    <th class="has-text-centered">5</th>
-                </tr>
-            </tfoot>
-
-        </table>
-
-        <table id="table4" class="table is-narrow hidden">
-            <thead>
-                <tr>
-                    <th class="has-text-centered">Week</th>
-                    <th class="has-text-centered">David</th>
-                    <th class="has-text-centered">Kenny</th>
-                    <th class="has-text-centered">Matthew</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>W</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>W</td>
-                    <td>L</td>
-                    <td>L</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <th class="has-text-centered">Total</th>
-                    <th class="has-text-centered">2</th>
-                    <th class="has-text-centered">0</th>
-                    <th class="has-text-centered">1</th>
-                </tr>
-            </tfoot>
-
-        </table>
-    </section>
+        </section>
+    </container>
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>

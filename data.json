@@ -1,0 +1,198 @@
+{
+    "period1": [{
+            "week": 1,
+            "david": "Win",
+            "kenny": "Win",
+            "matt": "Loss"
+        },
+        {
+            "week": 2,
+            "david": "Loss",
+            "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 3,
+            "david": "Loss",
+            "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 4,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 5,
+            "david": "Win",
+            "kenny": "Win",
+            "matt": "Loss"
+        },
+        {
+            "week": 6,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 7,
+            "david": "Loss",
+            "kenny": "Loss",
+            "matt": "Win"
+        },
+        {
+            "week": 8,
+            "david": "Loss",
+            "kenny": "Loss",
+            "matt": "Win"
+        },
+        {
+            "week": 9,
+            "david": "Loss",
+            "kenny": "Win",
+            "matt": "Win"
+        },
+        {
+            "week": 10,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Loss"
+        }
+    ],
+    "period2": [{
+            "week": 1,
+            "david": "Loss",
+            "kenny": "Win",
+            "matt": "Win"
+        },
+        {
+            "week": 2,
+            "david": "Win",
+            "kenny": "Win",
+            "matt": "Loss"
+        },
+        {
+            "week": 3,
+            "david": "Win",
+            "kenny": "Win",
+            "matt": "Loss"
+        },
+        {
+            "week": 4,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 5,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 6,
+            "david": "Loss",
+            "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 7,
+            "david": "Loss",
+            "kenny": "Loss",
+            "matt": "Win"
+        },
+        {
+            "week": 8,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Win"
+        },
+        {
+            "week": 9,
+            "david": "Loss",
+            "kenny": "Win",
+            "matt": "Loss"
+        },
+        {
+            "week": 10,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Loss"
+        }
+    ],
+    "period3": [{
+            "week": 1,
+            "david": "Win",
+            "kenny": "Win",
+            "matt": "Win"
+        },
+        {
+            "week": 2,
+            "david": "Loss",
+            "kenny": "Win",
+            "matt": "Loss"
+        },
+        {
+            "week": 3,
+            "david": "Loss",
+            "kenny": "Win",
+            "matt": "Win"
+        },
+        {
+            "week": 4,
+            "david": "Loss",
+            "kenny": "Loss",
+            "matt": "Win"
+        },
+        {
+            "week": 5,
+            "david": "Loss",
+            "kenny": "Win",
+            "matt": "Loss"
+        },
+        {
+            "week": 6,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 7,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Win"
+        },
+        {
+            "week": 8,
+            "david": "Loss",
+            "kenny": "Loss",
+            "matt": "Win"
+        },
+        {
+            "week": 9,
+            "david": "Loss",
+            "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 10,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Win"
+        }
+    ],
+    "period4": [{
+            "week": 1,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Win"
+        },
+        {
+            "week": 2,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Loss"
+        }
+    ]
+}

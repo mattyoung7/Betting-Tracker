@@ -8,38 +8,33 @@ html {
     background-color: #ececec;
 }
 
-body {
-    text-align: center;
-}
-
-section {
-    margin: auto;
-    max-width: 50rem;
-}
-
 table {
-    width: 100%;
     border-radius: 5px;
+    width: 100%;
 }
 
-.section {
-    padding: 1rem 2rem;
-}
-
-.title {
-    padding: 1rem 2rem 2rem;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-}
-
-.flex {
+.container {
+    height: 100vh;
+    text-align: center;
     display: flex;
     flex-direction: column;
-}
+    margin: auto;
+    padding: 1rem;
 
-.hidden {
-    display: none;
+    .section {
+        padding: 1rem 0;
+    }
+    
+    .title {
+        padding: 0 1rem 2rem;
+    }
+    
+    .title {
+        padding: 1rem 0;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
 }
