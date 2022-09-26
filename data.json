@@ -213,9 +213,21 @@
             "matt": "Win"
         },
         {
-            "week": 5,
+            "week": 6,
             "david": "Win",
             "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 7,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Win"
+        },
+        {
+            "week": 8,
+            "david": "Win",
+            "kenny": "Win",
             "matt": "Loss"
         }
     ]
