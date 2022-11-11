@@ -12,7 +12,7 @@ function countWins(arr){
 
 function createTable(data, buttonNum = 0){
     const table = document.querySelector('tbody');
-    // Clear table content on button click
+    // Clear table content on button click.
     table.innerHTML = '';
 
     // For total count
