@@ -284,6 +284,49 @@
             "david": "Loss",
             "kenny": "Win",
             "matt": "Loss"
+        },
+        {
+            "week": 8,
+            "david": "Win",
+            "kenny": "Loss",
+            "matt": "Loss"
+        },
+        {
+            "week": 9,
+            "david": "Loss",
+            "kenny": "Loss",
+            "matt": "Win"
+        },
+        {
+            "week": 10,
+            "david": "Win",
+            "kenny": "Win",
+            "matt": "Win"
         }
-    ]
+    ],
+    "period6": [{
+        "week": 1,
+        "david": "Loss",
+        "kenny": "Loss",
+        "matt": "Loss"
+    },
+    {
+        "week": 2,
+        "david": "Win",
+        "kenny": "Win",
+        "matt": "Loss"
+    },
+    {
+        "week": 3,
+        "david": "Loss",
+        "kenny": "Loss",
+        "matt": "Loss"
+    },
+    {
+        "week": 4,
+        "david": "Loss",
+        "kenny": "Loss",
+        "matt": "Win"
+    }
+]
 }
