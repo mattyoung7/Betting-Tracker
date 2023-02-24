@@ -327,6 +327,30 @@
         "david": "Loss",
         "kenny": "Loss",
         "matt": "Win"
+    },
+    {
+        "week": 5,
+        "david": "Win",
+        "kenny": "Loss",
+        "matt": "Loss"
+    },
+    {
+        "week": 6,
+        "david": "Loss",
+        "kenny": "Win",
+        "matt": "Loss"
+    },
+    {
+        "week": 7,
+        "david": "Win",
+        "kenny": "Win",
+        "matt": "Win"
+    },
+    {
+        "week": 8,
+        "david": "Loss",
+        "kenny": "Loss",
+        "matt": "Win"
     }
 ]
 }
